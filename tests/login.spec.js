@@ -27,10 +27,14 @@ test("Login_test" , async()=>{
     const lgnobj = new LoginPage(page)
 
     await lgnobj.login(testinput.loginuser.username , testinput.loginuser.password)
+
+    lgnobj.verifyTitle();
+    
+
     await lgnobj.logoff()
 })
 
-test.only("Add product" , async()=>{
+test("Add product" , async()=>{
 
     const lgnobj = new LoginPage(page)
     const Homeobj = new Homepage(page)

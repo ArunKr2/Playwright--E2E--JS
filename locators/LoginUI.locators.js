@@ -4,6 +4,7 @@ export const LoginUI = {
     password:"Password",
     loginbtn:"#login-button",
     menubtn:"Open Menu",
-    logoffbtn:"#logout_sidebar_link"
+    logoffbtn:"#logout_sidebar_link",
+    error: "//h3[@data-test='error']"
 
 }

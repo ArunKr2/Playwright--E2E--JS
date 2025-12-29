@@ -1,7 +1,7 @@
 {
     "loginuser":{
         
-        "username": "standard_user" ,
+        "username": "standard_user",
         "password": "secret_sauce"
 
     },
@@ -12,6 +12,12 @@
         "lastname": "D",
         "zipcode": "641030"
 
+    },
+
+    "Verifydetails":{
+
+        "title":"Swag Labs",
+        "Invalid_login_message":"Epic sadface: Username and password do not match any user in this service"
     }
 
 }
