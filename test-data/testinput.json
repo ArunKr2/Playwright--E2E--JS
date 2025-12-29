@@ -4,5 +4,14 @@
         "username": "standard_user" ,
         "password": "secret_sauce"
 
+    },
+
+    "userdetails":{
+
+        "firstname":"ArunKumar",
+        "lastname": "D",
+        "zipcode": "641030"
+
     }
+
 }
