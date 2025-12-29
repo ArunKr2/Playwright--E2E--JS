@@ -1,6 +1,7 @@
 import {test,expect} from '@playwright/test'
 import {LoginPage} from '../pages/LoginPage'
 import testinput from '../test-data/testinput.json'
+import {Homepage} from '../pages/HomePage'
 
 
 let page
@@ -22,7 +23,18 @@ test.afterAll(async()=>{
 
 
 test("Login_test" , async()=>{
-    const obj = new LoginPage(page)
+    const lgnobj = new LoginPage(page)
 
-    await obj.login(testinput.loginuser.username , testinput.loginuser.password)
+    await lgnobj.login(testinput.loginuser.username , testinput.loginuser.password)
+    await lgnobj.logoff()
+})
+
+test.only("Add product" , async()=>{
+
+    const lgnobj = new LoginPage(page)
+    const Homeobj = new Homepage(page)
+ 
+    await lgnobj.login(testinput.loginuser.username , testinput.loginuser.password)
+
+    await Homeobj.selectprdct()
 })
