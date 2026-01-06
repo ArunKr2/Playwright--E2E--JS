@@ -4,7 +4,6 @@ import testinput from '../test-data/testinput.json'
 import {Homepage} from '../pages/HomePage'
 import { CartPage } from '../pages/CartPage'
 
-
 let page
 
 let context 
@@ -48,3 +47,4 @@ test("Add product" , async()=>{
 
     await Cartobj.CartPayment()
 })
+

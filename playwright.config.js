@@ -38,7 +38,7 @@ export default defineConfig({
 
     actionTimeout:15 * 1000,
 
-    browserName:'webkit',
+    browserName:'firefox',
 
     launchOptions:{
       slowMo: 300
